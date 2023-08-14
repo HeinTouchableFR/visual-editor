@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &.between {
+    justify-content: space-between;
+  }
+
+  &.column {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+}

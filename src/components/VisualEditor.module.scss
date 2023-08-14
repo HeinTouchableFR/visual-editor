@@ -1,0 +1,27 @@
+.visual-editor {
+  --sidebar: 620px;
+  --clamped: clamp(470px, var(--sidebar), calc(100vw - 375px));
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: var(--clamped) 1fr;
+  color: var(--color);
+  font-size: var(--step-0);
+  transition: background-color .3s ease 0s;
+  box-sizing: border-box;
+  isolation: isolate;
+  z-index: 9999;
+  animation: .7s cubic-bezier(.19, 1, .22, 1) 0s 1 normal both running animateBackgroundIn;
+}
+
+@keyframes animateBackgroundIn {
+  0% {
+    background-color: #fff0;
+  }
+
+  100% {
+    background-color: var(--color);
+  }
+}

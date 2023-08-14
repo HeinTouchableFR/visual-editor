@@ -12,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <script type="module">
         import RefreshRuntime from "http://localhost:5173/@react-refresh"
+
         RefreshRuntime.injectIntoGlobalHook(window)
-        window.$RefreshReg$ = () => {}
+        window.$RefreshReg$ = () => {
+        }
         window.$RefreshSig$ = () => (type) => type
         window.__vite_plugin_react_preamble_installed__ = true
     </script>
@@ -55,14 +57,14 @@
 
         :root {
             --font: "Rubik";
-            --step--2: clamp(0.61rem,calc(0.6rem + 0.05vw),0.64rem);
-            --step--1: clamp(0.73rem,calc(0.71rem + 0.11vw),0.80rem);
-            --step-0: clamp(0.88rem,calc(0.84rem + 0.19vw),1.00rem);
-            --step-1: clamp(1.05rem,calc(0.99rem + 0.31vw),1.25rem);
-            --step-2: clamp(1.26rem,calc(1.17rem + 0.47vw),1.56rem);
-            --step-3: clamp(1.51rem,calc(1.37rem + 0.69vw),1.95rem);
-            --step-4: clamp(1.81rem,calc(1.62rem + 0.97vw),2.44rem);
-            --step-5: clamp(2.18rem,calc(1.91rem + 1.36vw),3.05rem);
+            --step--2: clamp(0.61rem, calc(0.6rem + 0.05vw), 0.64rem);
+            --step--1: clamp(0.73rem, calc(0.71rem + 0.11vw), 0.80rem);
+            --step-0: clamp(0.88rem, calc(0.84rem + 0.19vw), 1.00rem);
+            --step-1: clamp(1.05rem, calc(0.99rem + 0.31vw), 1.25rem);
+            --step-2: clamp(1.26rem, calc(1.17rem + 0.47vw), 1.56rem);
+            --step-3: clamp(1.51rem, calc(1.37rem + 0.69vw), 1.95rem);
+            --step-4: clamp(1.81rem, calc(1.62rem + 0.97vw), 2.44rem);
+            --step-5: clamp(2.18rem, calc(1.91rem + 1.36vw), 3.05rem);
             --container-padding: 20px;
             --container-width: 1350px;
             --gap: 20px;
